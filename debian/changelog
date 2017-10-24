@@ -1,0 +1,314 @@
+qtsensors-opensource-src (5.9.1-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 16 Aug 2017 14:10:02 -0300
+
+qtsensors-opensource-src (5.9.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/copyright for new release.
+  * Bump Qt build-dependencies to 5.9.1.
+  * Bump Standards-Version to 4.0.0, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 07 Jul 2017 14:42:18 +0300
+
+qtsensors-opensource-src (5.9.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/copyright.
+  * Install the new QHumiditySensor library.
+  * Add my name to Uploaders.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Fri, 09 Jun 2017 23:38:52 -0500
+
+qtsensors-opensource-src (5.7.1~20161021-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 01 Nov 2016 09:30:20 -0300
+
+qtsensors-opensource-src (5.7.1~20161021-1) experimental; urgency=medium
+
+  * New upstream snapshot.
+    - Bump Qt build dependencies.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 26 Oct 2016 15:25:47 -0300
+
+qtsensors-opensource-src (5.7.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.7.0.
+  * Update debian/copyright.
+  * Install the new iio-sensor-proxy plugin on Linux.
+  * Drop obsolete Breaks/Replaces.
+  * Migrate to automatic dbgsym packages.
+  * Add Qt_5.7 version tag to libqt5sensors5.symbols.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 07 Aug 2016 21:01:23 +0300
+
+qtsensors-opensource-src (5.6.1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 13 Jun 2016 11:08:44 -0300
+
+qtsensors-opensource-src (5.6.1-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Bump Qt build dependencies.
+  * Bump Standards-Version to 3.9.8, no changes required.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 11 Jun 2016 22:56:41 -0300
+
+qtsensors-opensource-src (5.6.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.6.0.
+  * Use https URIs for Vcs fields.
+  * Update debian/libqt5sensors5.symbols for 5.6.0.
+  * Bump Standards-Version to 3.9.7, no changes needed.
+  * Drop copyright entries for removed BlackBerry support files.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 29 Mar 2016 22:30:53 +0200
+
+qtsensors-opensource-src (5.5.1-3) unstable; urgency=medium
+
+  * Drop libqt5xcbqpa5, we merged it's contents in libqt5gui5, provided by
+    qtbase5-dev (Closes: #817794).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 10 Mar 2016 16:57:18 -0300
+
+qtsensors-opensource-src (5.5.1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 21 Oct 2015 21:35:22 -0300
+
+qtsensors-opensource-src (5.5.1-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Bump Qt build dependencies.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Mon, 19 Oct 2015 09:40:36 +0000
+
+qtsensors-opensource-src (5.5.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.5.0.
+  * Do not run tests during arch-indep builds.
+  * Build-depend on libqt5xcbqpa5, it is needed to run tests under Xvfb.
+  * Refresh disable_local_tests.diff.
+  * Update debian/copyright.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 28 Aug 2015 21:33:38 +0300
+
+qtsensors-opensource-src (5.4.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 24 Jun 2015 17:41:45 -0300
+
+qtsensors-opensource-src (5.4.2-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Update Source URL, as gitorious is closing.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
+    - Bump Qt build dependencies.
+  * Clear up the list in Uploaders removing people who hasn't committed to the
+    repo in more than a year. They can re add themselves whenever they want
+    (and we really hope to see you back really soon!).
+  * Expose HTML documentation (Closes: #751182).
+  * The original source package no longer contains the minimized javascript
+    code, so we are switching back to non-dfsg versioning.
+    - Update debian/copyright accordingly.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 03 Jun 2015 16:50:09 -0300
+
+qtsensors-opensource-src (5.4.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+
+  [ Rohan Garg ]
+  * Don't install the dummy sensors plugin, it was removed in 5.4.1
+    (see https://bugreports.qt.io/browse/QTBUG-39475).
+
+  [ Dmitry Shachnev ]
+  * Bump Qt build-dependencies to 5.4.1.
+  * Update debian/watch to use https://download.qt.io/.
+  * Disable tests that work only on local installations.
+  * Re-enable running tests during build.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 04 Mar 2015 19:47:10 +0300
+
+qtsensors-opensource-src (5.4.0+dfsg-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.4.0.
+  * Update and clean up debian/copyright.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update libqt5sensors5.symbols.
+
+  [ Timo Jyrinki ]
+  * Update libqt5sensors5-dev.install.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 26 Dec 2014 13:13:01 +0300
+
+qtsensors-opensource-src (5.3.2+dfsg-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Update symbols files with buildds' logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 22 Sep 2014 23:53:24 -0300
+
+qtsensors-opensource-src (5.3.2+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update build-dependencies for Qt 5.3.2.
+  * Update my e-mail address.
+  * Update Vcs-Browser field to point to cgit interface.
+  * Update debian/copyright for new release.
+  * Use correct exception syntax in debian/copyright.
+  * Build-depend on qtbase5-doc-html.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 18 Sep 2014 12:38:10 +0400
+
+qtsensors-opensource-src (5.3.1+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build dependencies.
+  * Update symbols files with buildds' logs.
+  * Disable test to sort out transition. Yes, ugly hack.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 02 Jul 2014 18:19:09 -0300
+
+qtsensors-opensource-src (5.3.0+dfsg-3) unstable; urgency=medium
+
+  * Drop transitional QML module package.
+  * Update symbols files with buildds' and current logs (Closes: #746901).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 20 Jun 2014 20:14:12 -0300
+
+qtsensors-opensource-src (5.3.0+dfsg-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 06 Jun 2014 00:53:15 -0300
+
+qtsensors-opensource-src (5.3.0+dfsg-1) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Use Files-Excluded field instead of prune-nonfree target in rules.
+  * Bump Qt build-dependencies.
+  * Update for Multi-Arch headers location, mark libqt5sensors5-dev as
+    Multi-Arch: same.
+  * Update libqt5sensors5.symbols.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 25 May 2014 14:13:50 -0300
+
+qtsensors-opensource-src (5.2.1+dfsg-4) unstable; urgency=medium
+
+  * Rename QML module qtdeclarative5-qtsensors-plugin to qml-module-qtsensors,
+    providing proper Break+Replaces and file renamings.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 03 Apr 2014 11:51:37 -0300
+
+qtsensors-opensource-src (5.2.1+dfsg-3) unstable; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Use dh_auto_test to run the tests.
+  * Remove dh_builddeb override, xz is now the default compression method.
+  * Remove dh_auto_build-arch override, it is not needed.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 24 Mar 2014 23:22:30 -0300
+
+qtsensors-opensource-src (5.2.1+dfsg-2) experimental; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Build documentation packages (closes: #737712).
+  * Properly clean the build.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add Build-Depends-Indep with libqt5sql5-sqlite and qttools5-dev-tools to be
+    able to build the doc.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 25 Feb 2014 15:03:18 -0300
+
+qtsensors-opensource-src (5.2.1+dfsg-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build dependencies.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 16 Feb 2014 18:33:42 -0300
+
+qtsensors-opensource-src (5.2.0+dfsg-3) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Move mkspec files to their new location.
+    - B-D on qtbase5-private-dev 5.2.0+dfsg-7 which changed the location.
+  * Update Standards-Version to 3.9.5, no changes required.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 31 Jan 2014 20:45:12 -0300
+
+qtsensors-opensource-src (5.2.0+dfsg-2) experimental; urgency=low
+
+  [ Dmitry Shachnev ]
+  * Fix typo in the previous changelog entry.
+  * Install libqtsensors_linuxsys.so only on Linux.
+
+  [ Pino Toscano ]
+  * Do not install the private qmake stuff.
+  * Remove the Pre-Depends on dpkg >= 1.15.6~, since that version is available
+    in Squeeze already.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Move mkspec files to their new location.
+    - B-D on qtbase5-private-dev 5.2.0+dfsg-7 which changed the location.
+  * Update Standards-Version to 3.9.5, no changes required.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 26 Dec 2013 15:18:42 -0300
+
+qtsensors-opensource-src (5.2.0+dfsg-1) experimental; urgency=low
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Update libqt5sensors5.symbols.
+  * Bump qtbase and qtdeclarative build-dependencies to 5.2.0.
+  * Make Vcs-Browser field canonical by dropping useless attribute.
+  * Run tests during build.
+  * Explicitly define DEB_HOST_MULTIARCH in debian/rules.
+  * Use my correct email for Uploaders field.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Remove transitional dummy package libqtsensors5-dev, it is no longer
+    needed.
+  * Regenerate symbols that used the qreal subst, they are no longer necessary.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 14 Dec 2013 00:06:08 -0300
+
+qtsensors-opensource-src (5.1.1+dfsg-3) unstable; urgency=low
+
+  * Substitute qreal in symbols file to fix FTBFS on armhf.
+  * Add myself to uploaders
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 12 Nov 2013 12:29:47 -0500
+
+qtsensors-opensource-src (5.1.1+dfsg-2) unstable; urgency=low
+
+  * Rename libqtsensors5-dev to libqt5sensors5-dev:
+    - Provide libqtsensors5-dev as a transitional dummy package.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 06 Nov 2013 12:08:57 -0300
+
+qtsensors-opensource-src (5.1.1+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #697509).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 21 Oct 2013 22:47:26 -0300

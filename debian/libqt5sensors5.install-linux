@@ -1,0 +1,2 @@
+usr/lib/*/qt5/plugins/sensors/libqtsensors_iio-sensor-proxy.so
+usr/lib/*/qt5/plugins/sensors/libqtsensors_linuxsys.so
