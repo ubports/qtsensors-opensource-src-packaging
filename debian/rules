@@ -17,7 +17,7 @@ pkgs_with_common = $(patsubst debian/%.install-common,%,$(wildcard debian/*.inst
 pkgs_with_os = $(patsubst debian/%.install-$(DEB_HOST_ARCH_OS),%,$(wildcard debian/*.install-$(DEB_HOST_ARCH_OS)))
 
 %:
-	dh $@ --with pkgkde_symbolshelper
+	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	qmake QT_BUILD_PARTS+=tests
