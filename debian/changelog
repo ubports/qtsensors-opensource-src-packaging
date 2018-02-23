@@ -1,4 +1,32 @@
-qtsensors-opensource-src (5.9.1+ubports) xenial; urgency=medium
+qtsensors-opensource-src (5.9.3-0ubports3) xenial; urgency=medium
+
+  * Build for xenial
+
+ -- Marius <mariogrip@ubuntu.com>  Fri, 23 Feb 2018 02:19:14 +0100
+
+qtsensors-opensource-src (5.9.3-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+  * Bump build dependencies to 5.9.3.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 10 Dec 2017 12:36:42 -0600
+
+qtsensors-opensource-src (5.9.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 00:20:55 +0300
+
+qtsensors-opensource-src (5.9.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Update debhelper compatibility level to 10.
+  * Bump Standards-Version to 4.1.1, stop using deprecated Priority: extra.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 15 Oct 2017 19:35:04 +0300
+
+qtsensors-opensource-src (5.9.1-2) unstable; urgency=medium
 
   * Release to unstable.
 
