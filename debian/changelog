@@ -1,8 +1,14 @@
-qtsensors-opensource-src (5.9.3-0ubports3) xenial; urgency=medium
+qtsensors-opensource-src (5.9.5-0ubports1) xenial; urgency=medium
 
-  * Build for xenial
+  * New upstream release.
 
- -- Marius <mariogrip@ubuntu.com>  Fri, 23 Feb 2018 02:19:14 +0100
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 14 Apr 2018 12:21:03 -0500
+
+qtsensors-opensource-src (5.9.4-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 24 Feb 2018 15:21:24 -0600
 
 qtsensors-opensource-src (5.9.3-0ubuntu1) bionic; urgency=medium
 
