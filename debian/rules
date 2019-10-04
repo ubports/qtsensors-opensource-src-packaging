@@ -20,7 +20,7 @@ pkgs_with_os = $(patsubst debian/%.install-$(DEB_HOST_ARCH_OS),%,$(wildcard debi
 	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	qmake QT_BUILD_PARTS+=tests
+	qmake QT_BUILD_PARTS+=tests CONFIG+=sensorfw
 
 override_dh_auto_build-indep:
 	dh_auto_build -Smakefile -- docs
