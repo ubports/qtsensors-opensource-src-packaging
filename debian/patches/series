@@ -1,1 +1,2 @@
 disable_local_tests.diff
+build-sensorfw-and-linux.patch

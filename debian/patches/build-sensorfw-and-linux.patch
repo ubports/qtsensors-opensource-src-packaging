@@ -1,0 +1,13 @@
+Index: qtsensors-opensource-src-5.9.5/src/plugins/sensors/sensors.pro
+===================================================================
+--- qtsensors-opensource-src-5.9.5.orig/src/plugins/sensors/sensors.pro
++++ qtsensors-opensource-src-5.9.5/src/plugins/sensors/sensors.pro
+@@ -6,7 +6,7 @@ android {
+ }
+ 
+ qtConfig(sensorfw) {
+-    isEmpty(SENSORS_PLUGINS): SENSORS_PLUGINS = sensorfw generic
++    isEmpty(SENSORS_PLUGINS): SENSORS_PLUGINS = sensorfw linux iio-sensor-proxy generic
+ }
+ 
+ darwin {

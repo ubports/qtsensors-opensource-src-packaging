@@ -14,7 +14,9 @@ Build-Depends: debhelper (>= 9),
                qtbase5-private-dev (>= 5.9.5+dfsg~),
                qtdeclarative5-private-dev (>= 5.9.5~),
                xauth,
-               xvfb
+               xvfb,
+               pkg-config,
+               libsensorfw-qt5-dev
 Standards-Version: 4.1.1
 Homepage: http://qt-project.org/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtsensors.git
@@ -30,6 +32,17 @@ Description: Qt Sensors module
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt Sensors module.
+
+Package: libqt5sensors5-sensorfw
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Sensors sensorfw plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains Qt Sensors sensorfw plugin.
 
 Package: qml-module-qtsensors
 Architecture: any
